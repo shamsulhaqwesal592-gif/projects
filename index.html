@@ -3,19 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Site - Minimalist</title>
     <style>
-        body{
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: rgba(30, 50,70 , 0.911);
-            color: white;
-            text-align: center;
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #111;
+            background-color: #fcfcfc;
+            max-width: 650px;
+            margin: 40px auto;
+            padding: 0 20px;
         }
-
+        header { margin-bottom: 60px; }
+        h1 { font-size: 2rem; font-weight: 600; letter-spacing: -0.02em; }
+        h2 { font-size: 1.25rem; font-weight: 500; margin-top: 40px; }
+        p { color: #555; }
+        a { color: #111; text-decoration: underline; text-underline-offset: 4px; }
+        a:hover { color: #555; }
+        .project-list { list-style: none; padding: 0; }
+        .project-item { margin-bottom: 20px; }
+        .project-date { font-size: 0.85rem; color: #888; display: block; }
+        footer { margin-top: 80px; border-top: 1px solid #eee; padding-top: 20px; font-size: 0.9rem; color: #888; }
     </style>
-    <title>Document</title>
 </head>
 <body>
-    <h1>wellcome to my personal profilo </h1>
-    
+
+    <header>
+        <h1>Alex Morgan</h1>
+        <p>Independent Researcher & Writer focusing on digital culture and minimalist software architecture.</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>About</h2>
+            <p>I build lightweight tools and write essays exploring how human behavior adapts to complex technical infrastructures. Currently operating independently from Berlin.</p>
+        </section>
+
+        <section>
+            <h2>Selected Work</h2>
+            <ul class="project-list">
+                <li class="project-item">
+                    <span class="project-date">2026</span>
+                    <a href="#">The Architecture of Quiet Software</a> — An essay on digital friction.
+                </li>
+                <li class="project-item">
+                    <span class="project-date">2025</span>
+                    <a href="#">LiteMarkdown</a> — A zero-dependency parser built for fast environments.
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Contact</h2>
+            <p>Reach out via <a href="mailto:alex@example.com">Email</a>, read my thoughts on <a href="#">GitHub</a>, or follow updates via <a href="#">RSS</a>.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Alex Morgan. Built with clean HTML.</p>
+    </footer>
+
 </body>
 </html>
